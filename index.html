@@ -8,39 +8,35 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <!-- Font Awesome (for icons) -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-y7DZOicjS6jR6EclzMiC8ZsHg+ZVuWgQzN0mYkTb+nM3z3tk4nl6r81ip3RvqlEc0ZtDtbav5hZsCd9oH2FqKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-  <!-- Font Awesome 6 - CDN方式，建议使用 -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-y7DZOicjS6jR6EclzMiC8ZsHg+ZVuWgQzN0mYkTb+nM3z3tk4nl6r81ip3RvqlEc0ZtDtbav5hZsCd9oH2FqKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-  <!-- bootcdn 镜像（国内可访问） -->
   <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom, #f4f9f4, #ffffff);
+      background: #f9fafb;
       color: #222;
       margin: 0;
-      padding: 0;
     }
 
     header {
-      background-color: #3e8e41;
+      background-color: #256c34;
       color: white;
-      padding: 20px 0;
+      padding: 40px 20px;
       text-align: center;
     }
 
+    header h1 {
+      font-size: 2.4em;
+      margin: 0;
+    }
+
     nav {
-      background-color: #2f7032;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
+      margin-top: 15px;
     }
 
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 12px;
       text-decoration: none;
       font-weight: 500;
     }
@@ -49,100 +45,76 @@
       text-decoration: underline;
     }
 
-    .content {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      text-align: center;
-    }
-
-    .profile-photo {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      margin-bottom: 20px;
+    .container {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
 
     h2 {
-      font-size: 1.8em;
-      color: #3e8e41;
+      font-size: 1.6em;
+      color: #256c34;
       margin-top: 40px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 5px;
     }
 
-    p {
-      font-size: 1.1em;
-      line-height: 1.6em;
-      margin: 10px 0;
+    .profile {
+      text-align: center;
+      margin-bottom: 30px;
     }
 
-    .email-list a {
-      color: #3e8e41;
-      text-decoration: none;
+    .profile img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin-bottom: 15px;
     }
 
-    .email-list a:hover {
-      text-decoration: underline;
-    }
-
-    .section {
-      text-align: left;
-      margin-top: 40px;
-      padding: 0 20px;
-    }
-
-    .section ul {
+    ul {
       padding-left: 20px;
     }
 
-    .section li {
+    li {
       margin-bottom: 8px;
-      font-size: 1em;
+      line-height: 1.6em;
     }
 
     .social-links {
-      margin-top: 20px;
-      text-align: center;
+      margin-top: 15px;
     }
 
     .social-links a {
-      margin: 0 10px;
-      color: #3e8e41;
-      font-size: 1.5em;
+      margin: 0 8px;
+      color: #256c34;
+      font-size: 1.4em;
       text-decoration: none;
     }
 
     .social-links a:hover {
-      color: #2a5d2c;
+      color: #174520;
     }
 
     footer {
-      background-color: #333;
+      background-color: #111;
       color: white;
-      padding: 15px 10px;
       text-align: center;
-      margin-top: 60px;
+      padding: 15px;
+      margin-top: 50px;
+      font-size: 0.9em;
     }
 
     @media (max-width: 600px) {
       header h1 {
-        font-size: 2em;
+        font-size: 1.8em;
       }
 
-      .profile-photo {
-        width: 140px;
-        height: 140px;
-      }
-
-      h2 {
-        font-size: 1.5em;
-      }
-
-      p,
-      .section li {
-        font-size: 1em;
+      .profile img {
+        width: 120px;
+        height: 120px;
       }
     }
   </style>
@@ -150,70 +122,112 @@
 
 <body>
 
-  <!-- Header and Nav -->
+  <!-- Header -->
   <header>
     <h1>Kaisen Yang (杨凯森)</h1>
     <nav>
       <a href="#about">About</a>
+      <a href="#news">News</a>
       <a href="#research">Research</a>
-      <a href="#education">Education</a>
+      <a href="#publications">Publications</a>
+      <a href="#honors">Honors</a>
+      <a href="#competitions">Competitions</a>
+      <a href="#service">Service</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- Main Content -->
-  <div class="content" id="about">
-    <img src="photo.jpg" alt="Portrait of Kaisen Yang" class="profile-photo" />
-    <p>Welcome to my personal website. Here I share a bit about myself, my research interests, and academic background.</p>
-
-    <div class="social-links">
-      <a href="https://github.com/yks23" target="_blank" title="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://scholar.google.com/citations?user=1sPA9NoAAAAJ" target="_blank" title="Google Scholar">
-        <i class="fas fa-graduation-cap"></i>
-      </a>
-      <a href="mailto:yks23@mails.tsinghua.edu.cn" title="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
+  <div class="container">
+    <!-- Profile -->
+    <div class="profile" id="about">
+      <img src="photo2.jpg" alt="Portrait of Kaisen Yang">
+      <p>
+        I am a third-year undergraduate in the Department of Computer Science and Technology at
+        <strong>Tsinghua University</strong>.  
+        My research focuses on <b>Generative AI, Large Language Model Reasoning, and Knowledge Graph Automation</b>.  
+      </p>
+      <div class="social-links">
+        <a href="https://github.com/yks23" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://scholar.google.com/citations?user=1sPA9NoAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+        <a href="mailto:yks23@mails.tsinghua.edu.cn"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
+
+    <section id="news">
+  <h2>News</h2>
+  <ul>
+    <li>
+      <b>Sep 2025</b>
+      4 papers submitted to ICLR 2026 —
+      <a href="https://arxiv.org/abs/2509.23946">Explore-Execute Chain</a>,
+Sim2Real-HOI,
+    CubeBench,
+      <a href="https://arxiv.org/abs/2509.23582">RobuQ</a>
+    </li>
+  </ul>
+</section>
+
+
+    <!-- Research -->
+    <section id="research">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Large Language Model Reasoning and Reinforcement Learning</li>
+        <li>Diffusion Models</li>
+        <li>Knowledge Graph Automation</li>
+      </ul>
+    </section>
+
+    <!-- Publications -->
+   <section id="publications">
+  <h2>Publications</h2>
+  <ul>
+    <li>
+      <b>Tree-KG: An Expandable Knowledge Graph Construction Framework for Knowledge-intensive Domains</b><br>
+      <i>ACL 2025 (Poster)</i>
+    </li>
+    <li>
+      <b>Impromptu VLA: Open Weights and Open Data for Driving Vision-Language-Action Models</b><br>
+      <i>NeurIPS 2025 (Poster)</i>
+    </li>
+  </ul>
+</section>
+
+
+    <!-- Honors -->
+    <section id="honors">
+      <h2>Honors & Awards</h2>
+      <ul>
+        <li>Wang Dazhong Scholarship, Tsinghua University (2024)</li>
+        <li>Member of Spark Program (理事会成员), 2025</li>
+        <li>Leader, Academic Talent Program (学推计划 A 类), 2025</li>
+        <li>PI, Beijing Natural Science Foundation "启研" Undergraduate Program (2025)</li>
+      </ul>
+    </section>
+
+    <!-- Service -->
+    <section id="service">
+      <h2>Leadership</h2>
+      <ul>
+        <li><b>Class Monitor</b> (CS Class 31): Organized academic and cultural events</li>
+        <li><b>Vice Minister</b>, Student Union Rights Development Dept.</li>
+        <li><b>Vice Chair</b>, Student Science Association Innovation Dept.</li>
+        <li>Recognized as Outstanding Communist Youth League Member (department & university level)</li>
+      </ul>
+    </section>
 
     <!-- Contact -->
-    <div class="email-list" id="contact">
-      <p>You can reach me via email:</p>
-      <p><a href="mailto:yks23@mails.tsinghua.edu.cn">yks23@mails.tsinghua.edu.cn</a></p>
-      <p><a href="mailto:yangkaisen39@gmail.com">yangkaisen39@gmail.com</a></p>
-      <p>Or find me at:</p>
-      <p>Zijing Student Dormitory, Room #2 213B, Tsinghua University</p>
-    </div>
-
-    <!-- Research Section -->
-    <div class="section" id="research">
-      <h2>Research Interests</h2>
-      <p>My research focuses on <strong>Machine Learning</strong> and <strong>Computer Vision</strong>. I am particularly interested in:</p>
-      <ul>
-        <li>Diffusion Models for Hand-Object Interaction (HOI) video generation</li>
-        <li>Diffusion Models for discriminative tasks</li>
-        <li>Large Language Models (LLMs)</li>
-        <li>Automated Knowledge Graph Construction</li>
-      </ul>
-    </div>
-
-    <!-- Education Section -->
-    <div class="section" id="education">
-      <h2>Education</h2>
-      <p>I received my Bachelor's degree in Computer Science from:</p>
-      <ul>
-        <li><strong>Tsinghua University</strong>, Class of 2023</li>
-      </ul>
-    </div>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:yks23@mails.tsinghua.edu.cn">yks23@mails.tsinghua.edu.cn</a></p>
+      <p>Secondary: <a href="mailto:yangkaisen39@gmail.com">yangkaisen39@gmail.com</a></p>
+      <p>Address: Zijing Student Dormitory, Tsinghua University</p>
+    </section>
   </div>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Kaisen Yang. All rights reserved.</p>
+    <p>&copy; 2025 Kaisen Yang. Last updated Oct 2025.</p>
   </footer>
 
 </body>
-
 </html>
